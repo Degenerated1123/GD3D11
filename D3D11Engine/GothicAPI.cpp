@@ -608,6 +608,8 @@ void GothicAPI::OnLoadWorld(const std::string& levelName, int loadMode)
 /** Called when the game is done loading the world */
 void GothicAPI::OnWorldLoaded()
 {
+	LoadCustomZENResources();
+
 	LogInfo() << "Collecting vobs...";
 
 	static bool s_firstLoad = true;
